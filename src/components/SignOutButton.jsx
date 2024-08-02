@@ -5,7 +5,7 @@ import Dropdown from 'react-bootstrap/Dropdown';
 /**
  * Renders a sign out button
  */
-export const SignOutButton = () => {
+const SignOutButton = () => {
   const { instance } = useMsal();
 
   const handleLogout = (logoutType) => {
@@ -32,3 +32,5 @@ export const SignOutButton = () => {
     </DropdownButton>
   );
 };
+
+export default SignOutButton;
